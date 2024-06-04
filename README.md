@@ -17,7 +17,7 @@ int main(int argc, const char **argv) {
     captcha::captcha_generator gen("resources/captcha-alphabet.png", "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
     // distortion if any is to be applied, must be a normal map
     captcha::captcha_effect distortion("resources/captcha-distortion.png");
-    // background image if anyis to be applied, will be converted to grayscale when used
+    // background image if any is to be applied, will be converted to grayscale when used
     captcha::captcha_image background("resources/captcha-background.png");
 
     auto image = gen.create(
